@@ -1,6 +1,8 @@
 # clion-live-templates-generator
 
-![](https://github.com/habara-k/clion-live-templates-generator/workflows/CI/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![](https://github.com/habara-k/clion-live-templates-generator/workflows/CI/badge.svg)
+[![PyPI version](https://badge.fury.io/py/clion-live-templates-generator.svg)](https://badge.fury.io/py/clion-live-templates-generator)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # What is this?
 
@@ -19,7 +21,7 @@ $ pip install clion-live-templates-generator
 ## Generate Live templates
 
 ```
-$ lt-generate -d <YOUR_LIBRARY>
+$ lt-generate -d <YOUR_LIBRARY_DIR>
 ```
 
 ### Where to place
@@ -42,7 +44,7 @@ $ mv C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates
 $ mv C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates
 ```
 
-## Use Live templates
+## Try Live templates
 
 - restart CLion
 - push `cmd + j`
