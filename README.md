@@ -22,14 +22,29 @@ $ pip install clion-live-templates-generator
 $ lt-generate -d <YOUR_LIBRARY>
 ```
 
+### Where to place
+
+Example
+
+- Windows (not tested)
+
+```
+$ mv C_C__.xml C:\Users\JohnS\AppData\Local\JetBrains\CLion2020.1\templates
+```
+
 - macOS
 ```
-$ mv C_C__.xml ~/Library/Application\ Support/JetBrains/CLion{{YOUR_VERSION}}/templates/
+$ mv C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates
+```
+
+- Linux (not tested)
+```
+$ mv C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates
 ```
 
 ## Use Live templates
 
-- start CLion
+- restart CLion
 - push `cmd + j`
 
 ![](https://user-images.githubusercontent.com/34413567/87849457-c9820080-c923-11ea-881f-6daabb676b2f.png)
