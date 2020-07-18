@@ -55,7 +55,6 @@ def main():
             help="The directory containing libraries for competitive programming")
 
     (options, args) = parser.parse_args()
-    print(options)
 
     generate_live_templates(options.output, options.dir)
 
