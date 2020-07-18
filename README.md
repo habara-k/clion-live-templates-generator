@@ -1,6 +1,6 @@
 # clion-live-templates-generator
 
-![](https://github.com/habara-k/clion-live-templates-generator/workflows/CI/badge.svg)
+![CI](https://github.com/habara-k/clion-live-templates-generator/workflows/CI/badge.svg)
 [![PyPI version](https://badge.fury.io/py/clion-live-templates-generator.svg)](https://badge.fury.io/py/clion-live-templates-generator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
