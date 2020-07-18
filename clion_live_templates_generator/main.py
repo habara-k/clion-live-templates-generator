@@ -1,4 +1,5 @@
 import os
+import re
 from optparse import OptionParser
 
 
@@ -12,6 +13,8 @@ def generate_live_templates(output_file, target_dir):
 
     with open(output_file,'w') as file:
         file.write('<templateSet group="C/C++">\n')
+
+        assert(os.path.exists(target_dir))
 
         for src_path in find_all_files(target_dir):
 
@@ -27,6 +30,8 @@ def generate_live_templates(output_file, target_dir):
             with open(src_path,'r') as src:
 
                 for row in src:
+                    if re.match('^#', row):
+                        continue
 
                     row = row.replace('&', '&amp;')
                     row = row.replace('\n', '&#10;')
