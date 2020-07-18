@@ -19,7 +19,7 @@ jobs:
         python-version: '3.x'
 
     - name: Run test
-      run: python ./clion-live-templates-generator/main.py -o test/test.xml -d test/lib
+      run: python ./clion_live_templates_generator/main.py -o test/test.xml -d test/lib
 
     - name: Upload XML
       uses: actions/upload-artifact@master
