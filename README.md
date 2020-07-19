@@ -32,7 +32,7 @@ Example
 
 - macOS
 ```
-$ mv -i C_C__.xml ~/Library/Application\ Support/JetBrains/CLion2020.1/templates/
+$ cp -i C_C__.xml ~/Library/Application\ Support/JetBrains/CLion2020.1/templates/C_C__.xml
 ```
 For Linux and Windows, please refer to the following links
 
