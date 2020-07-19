@@ -29,9 +29,14 @@ def generate_live_templates(target_dir):
             description = src_title
             value = ""
 
+            ignore = False
+
             with open(src_path,'r') as src:
 
                 for row in src:
+                    if re.match('^#define IGNORE', row):
+                        ignore = True
+                        break
                     if re.match('^#', row):
                         continue
 
@@ -42,6 +47,9 @@ def generate_live_templates(target_dir):
                     row = row.replace('"', '&quot;')
 
                     value += row
+
+            if ignore:
+                continue
 
             file.write('  <template name="{}" value="{}" description="{}" toReformat="true" toShortenFQNames="true">\n'.format(name, value, description))
             file.write('    <context>\n')
