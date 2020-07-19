@@ -19,11 +19,11 @@ jobs:
         python-version: '3.x'
 
     - name: Run test
-      run: python ./clion_live_templates_generator/main.py -o test/test.xml -d test/lib
+      run: python ./clion_live_templates_generator/main.py -d test/lib
 
     - name: Upload XML
       uses: actions/upload-artifact@master
       with:
-        name: test.xml
-        path: test/test.xml
+        name: C_C__.xml
+        path: C_C__.xml
       if: always()
