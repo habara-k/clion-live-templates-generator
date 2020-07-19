@@ -9,12 +9,12 @@ def find_all_files(directory):
             yield os.path.join(root, file)
 
 
-def generate_live_templates(output_file, target_dir):
+def generate_live_templates(target_dir):
 
-    with open(output_file,'w') as file:
+    OUTPUT_FILE = 'C_C__.xml'
+
+    with open(OUTPUT_FILE,'w') as file:
         file.write('<templateSet group="C/C++">\n')
-
-        assert(os.path.exists(target_dir))
 
         for src_path in find_all_files(target_dir):
 
@@ -55,15 +55,14 @@ def generate_live_templates(output_file, target_dir):
 def main():
     parser = OptionParser()
 
-    parser.add_option("-o", "--output", dest="output", default='C_C__.xml',
-            help="The Live templates file to be generated")
-
     parser.add_option("-d", "--dir", dest="dir",
             help="The directory containing libraries for competitive programming")
 
     (options, args) = parser.parse_args()
 
-    generate_live_templates(options.output, options.dir)
+    assert(os.path.exists(options.dir))
+
+    generate_live_templates(options.dir)
 
 
 if __name__ == '__main__':
