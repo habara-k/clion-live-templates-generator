@@ -28,20 +28,22 @@ $ lt-generate -d <YOUR_LIBRARY_DIR>
 
 Example
 
+**If you have already set up a live templates, please make a backup before you overwrite it.**
+
 - Windows (not tested)
 
 ```
-$ mv C_C__.xml C:\Users\JohnS\AppData\Local\JetBrains\CLion2020.1\templates\
+$ mv -i C_C__.xml C:\Users\JohnS\AppData\Local\JetBrains\CLion2020.1\templates\
 ```
 
 - macOS
 ```
-$ mv C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates/
+$ mv -i C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates/
 ```
 
 - Linux (not tested)
 ```
-$ mv C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates/
+$ mv -i C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates/
 ```
 
 ## Try Live templates
