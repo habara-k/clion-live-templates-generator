@@ -30,21 +30,13 @@ Example
 
 **If you have already set up a live templates, please make a backup before you overwrite it.**
 
-- Windows (not tested)
-
-```
-$ mv -i C_C__.xml C:\Users\JohnS\AppData\Local\JetBrains\CLion2020.1\templates\
-```
-
 - macOS
 ```
-$ mv -i C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates/
+$ mv -i C_C__.xml ~/Library/Application\ Support/JetBrains/CLion2020.1/templates/
 ```
+For Linux and Windows, please refer to the following links
 
-- Linux (not tested)
-```
-$ mv -i C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates/
-```
+https://pleiades.io/help/clion/tuning-the-ide.html#config-directory
 
 ## Try Live templates
 
