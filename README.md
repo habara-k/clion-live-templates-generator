@@ -31,17 +31,17 @@ Example
 - Windows (not tested)
 
 ```
-$ mv C_C__.xml C:\Users\JohnS\AppData\Local\JetBrains\CLion2020.1\templates
+$ mv C_C__.xml C:\Users\JohnS\AppData\Local\JetBrains\CLion2020.1\templates\
 ```
 
 - macOS
 ```
-$ mv C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates
+$ mv C_C__.xml ~/Library/Caches/JetBrains/CLion2020.1/templates/
 ```
 
 - Linux (not tested)
 ```
-$ mv C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates
+$ mv C_C__.xml ~/.cache/JetBrains/CLion2020.1/templates/
 ```
 
 ## Try Live templates
