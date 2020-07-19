@@ -22,6 +22,8 @@ def generate_live_templates(output_file, target_dir):
 
             if fext != '.cpp':
                 continue
+            if re.search('\.test$', src_title):
+                continue
 
             name = src_title
             description = src_title
